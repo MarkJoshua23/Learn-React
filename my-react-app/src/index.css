@@ -1,0 +1,13 @@
+*{
+    font-family: Helvetica, sans-serif;
+}
+
+
+.welcome-message{
+    font-size: 2em;
+    background-color: #89fad4;
+}
+.login-prompt{
+    font-size: 2em;
+    background-color: rgb(255, 84, 84);
+}
