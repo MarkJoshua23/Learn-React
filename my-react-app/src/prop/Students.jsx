@@ -10,6 +10,7 @@ function Student(props){
     );
 
 }
+//for debugging purposes set the datatypes of each values
 Student.propTypes = {
     name: PropTypes.string,
     age: PropTypes.number,

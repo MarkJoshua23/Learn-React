@@ -11,3 +11,29 @@
     font-size: 2em;
     background-color: rgb(255, 84, 84);
 }
+
+
+
+.list-category{
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    border: 3px solid #000;
+    border-radius: 10px;
+
+}
+
+.list-items li{
+    font-size: 2em;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+}
+.list-items li:hover{
+    color: #2e2d2d;
+}
+
+.img-me{
+    max-width: 200px;
+}

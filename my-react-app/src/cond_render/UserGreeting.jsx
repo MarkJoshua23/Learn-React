@@ -7,6 +7,7 @@ function UserGreeting(props){
     return(props.isLoggedIn ? welcomeMessaage : logInPrompt);
 
 }
+//for debugging purposes set the datatypes of each values
 UserGreeting.propTypes = {
     isLoggedIn: PropTypes.bool,
     username: PropTypes.string
