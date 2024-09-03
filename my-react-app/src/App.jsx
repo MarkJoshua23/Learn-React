@@ -3,8 +3,20 @@ import UserGreeting from "./cond_render/UserGreeting.jsx";
 import List from "./render_list/List.jsx";
 import Button from "./click_events/Button.jsx";
 import ProfilePicture from "./click_events/ProfilePicture.jsx";
-import MyComponent from "./MyComponent.jsx";
-import Counter from "./Counter.jsx";
+import MyComponent from "./use_state/MyComponent.jsx";
+import Counter from "./use_state/Counter.jsx";
+import OnChange from "./on_change/OnChange.jsx";
+import ColorPicker from "./color_picker/ColorPicker.jsx";
+import UpdateObject from "./update_object/UpdateObject.jsx";
+import UpdateArray from "./update_array/UpdateArray.jsx";
+import UpdateArrayofObject from "./update_array_of_objects/UpdateArrayOfObject.jsx";
+import TodoList from "./todo_list/TodoList.jsx";
+import UseEffect from "./use_effect/UseEffect.jsx";
+import UseEffect2 from "./use_effect/UseEffect2.jsx";
+import DigitalClock from "./digital_clock/DigitalClock.jsx";
+import ComponentA from "./use_context/ComponentA.jsx";
+import UseRef from "./UseRef.jsx";
+
 
 function App() {
   let char1 = 30;
@@ -54,6 +66,48 @@ function App() {
       <div className="use-state">
         <MyComponent />
         <Counter />
+      </div>
+
+      <div className="on-change">
+        <OnChange />
+      </div>
+
+      <div className="color-picker">
+        <ColorPicker />
+      </div>
+      <div className="update-object">
+        <UpdateObject />
+      </div>
+      <div className="update-array">
+        <UpdateArray />
+      </div>
+
+      <div className="update-array-of-object">
+        <UpdateArrayofObject />
+      </div>
+
+      <div className="todo-list">
+        <TodoList />
+      </div>
+
+      <div className="use-effect">
+        <UseEffect />
+      </div>
+
+      <div className="use-effect-2">
+        <UseEffect2 />
+      </div>
+
+      <div className="digital-clock">
+        <DigitalClock />
+      </div>
+
+      <div className="component-a">
+        <ComponentA />
+      </div>
+
+      <div className="use-ref">
+        <UseRef />
       </div>
     </>
   );

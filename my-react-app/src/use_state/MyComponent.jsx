@@ -8,7 +8,7 @@ function MyComponent(){
 
     const updateAge = ()=>{
         //call setter to update DOM
-        setAge(age + 1);
+        setAge(a=> a +1);
     }
 
     const toggle = () =>{
@@ -18,9 +18,12 @@ function MyComponent(){
     //[stateful var,setter function]  the dom will update if you update stateful var using setter
     // useState(default value)
     const [name, setName] = useState("Guest")
+    
     const [age,setAge] = useState(0)
-    //bool, important for toggles
+
+    //bool, important for toggles   
     const [isEmployed,setIsEmployed] = useState(false)
+
     return(
         <div>
             <p>Name: {name}</p>
