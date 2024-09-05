@@ -1,0 +1,17 @@
+context:
+-pass auth status if loggedin or not
+-pass theme status if dark or light
+-just like provider/riverpod
+
+nav tabs:
+- use conditional rendering
+- currentTab == 'about' && <component>
+
+Types/interface:
+-can be used across files, make a separate file for it
+
+
+TAILWIND=================
+
+group group-hover:
+hover to parent(group) => affects child(group-hover)
