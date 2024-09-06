@@ -15,3 +15,6 @@ TAILWIND=================
 
 group group-hover:
 hover to parent(group) => affects child(group-hover)
+
+Flex: 
+Flex, align, always
