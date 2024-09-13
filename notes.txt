@@ -25,3 +25,4 @@ responsive, just assign HEIGHT there should be NO WIDTH
 Callbacks:
 function passed as argument
 dont put () at the end, ex of wrong. function name(passedFunction()), because that will envoke it immediately, you use callback to wait for processes inside the name to finish before calling the function, make it function name(passedFunction).
+if you want to pass parameters with it you wrap it inside an arrow function function name(() => passedFunction("This is my message!")), which allows you to specify parameters.
