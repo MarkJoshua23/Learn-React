@@ -1,0 +1,12 @@
+.student{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.199);
+    margin-top: 5px;
+    border-radius: 10px;
+}
+.student p{
+    margin: 0;
+
+}
