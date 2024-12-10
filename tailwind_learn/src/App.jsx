@@ -7,7 +7,9 @@ import BodyCard from './assets/components/BodyCard'
 function App() {
 
   return (
-    <header></header>
+    <>
+    <Sidebar />
+    </>
   )
 }
 

@@ -1,11 +1,12 @@
 
 import Dashboard from "./Dashboard";
+import MyEUC from "./myeuc";
 
 
 const Screen = () => {
   return (
     <>
-    <Dashboard />
+    <MyEUC />
     </>
   );
 };

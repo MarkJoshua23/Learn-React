@@ -8,8 +8,8 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Textarea } from "@/components/ui/textarea"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Separator } from "@/components/ui/separator"
-import { ChevronDown, ChevronRight, ChevronLeft, Calendar, Book, BarChart, Plus, Pencil, Trash } from 'lucide-react'
-import { Bar, BarChart, ResponsiveContainer, XAxis, YAxis } from 'recharts'
+import { ChevronDown, ChevronRight, ChevronLeft, Calendar, Book, Plus, Pencil, Trash, BarChart } from 'lucide-react'
+
 
 // Dummy data
 const eventsData = [
@@ -49,7 +49,7 @@ export default function Dashboard() {
   const [sidebarOpen, setSidebarOpen] = useState(true)
   const [selectedMonth, setSelectedMonth] = useState('May')
   const [eventDialogOpen, setEventDialogOpen] = useState(false)
-  const [selectedEvent, setSelectedEvent] = useState(null)
+  const [selectedEvent, setSelectedEvent] = useState<any | null>(null)
   const [deleteDialogOpen, setDeleteDialogOpen] = useState(false)
 
   const handleAddEvent = () => {
@@ -57,12 +57,12 @@ export default function Dashboard() {
     setEventDialogOpen(true)
   }
 
-  const handleEditEvent = (event: React.SetStateAction<null>) => {
+  const handleEditEvent = (event: React.SetStateAction<object>) => {
     setSelectedEvent(event)
     setEventDialogOpen(true)
   }
 
-  const handleDeleteEvent = (event: React.SetStateAction<null>) => {
+  const handleDeleteEvent = (event: React.SetStateAction<object>) => {
     setSelectedEvent(event)
     setDeleteDialogOpen(true)
   }
@@ -180,24 +180,7 @@ export default function Dashboard() {
           {activeTab === 'Analytics' && (
             <div className="space-y-8">
               <div>
-                <h2 className="mb-4 text-2xl font-bold">Number of Users per Day</h2>
-                <ResponsiveContainer width="100%" height={300}>
-                  <BarChart data={userDataPerDay}>
-                    <XAxis dataKey="day" />
-                    <YAxis />
-                    <Bar dataKey="users" fill="#800000" />
-                  </BarChart>
-                </ResponsiveContainer>
-              </div>
-              <div>
-                <h2 className="mb-4 text-2xl font-bold">Number of Requests per Day</h2>
-                <ResponsiveContainer width="100%" height={300}>
-                  <BarChart data={requestsDataPerDay}>
-                    <XAxis dataKey="day" />
-                    <YAxis />
-                    <Bar dataKey="requests" fill="#800000" />
-                  </BarChart>
-                </ResponsiveContainer>
+                
               </div>
             </div>
           )}
